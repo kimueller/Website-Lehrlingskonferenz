@@ -1,94 +1,391 @@
-body{
-    font-family: 'Staatliches', cursive;
-    margin: 0;
-    overflow-x: hidden;
+/*******************************************************************/
+/*LAYOUT START                                                     */
+/*******************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+  background-size: cover;
 }
-.images{
-    position: relative;
-    max-width: 100%;
-    height: 100vh;
-    background-color: #5c93ab;
-    background-image: url("img/Wind.png");
-    background-repeat: repeat-x;
-    animation: animate 15s linear infinite;
+
+body {
+  background-color: #4498bc;
+  background-image: url("img/Wind.png");
+  background-repeat: repeat-x;
+  animation: animate 15s linear infinite;
 
 }
 @keyframes animate {
-    0% { background-position: 0 0; }
-    100% { background-position: 1920px 0; }
-}
-.images img{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    object-fit: cover;
+0% { background-position: 0 0; }
+100% { background-position: 1920px 0; }
 }
 
-.title{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    text-align: left;
+.slide {
+  width: 100vw;
+  height: 100vh;
 }
-#LK{
-    margin-top: -50px;
-    margin-left: -20px;
-    font-size: 80px;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
 }
-span{
-    position: relative;
-    display: inline-block;
-    animation: wave 5s infinite;
-    animation-delay: calc(.18s * var(--i));
-    letter-spacing: 10px;
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cards{
+  background-color: #515a5f;
+  border-radius: 16px;
+  color:white;
+  line-height: 1.5;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+/*******************************************************************/
+/*LAYOUT END                                                       */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*BACKGROUND START                                                 */
+/*******************************************************************/
+.one {
+  background-image: url("img/all\ -\ Kopie.png");
+  background-repeat: no-repeat;
+
+}
+
+.two {
+  background-image: url("img/zweite.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.three {
+  background-image: url("img/all\ -\ Kopie.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.four {
+  background-image: url("img/zweite.png");
+  background-repeat: no-repeat;
+}
+/*******************************************************************/
+/*BACKGROUND END                                                   */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*WINDY HEADING START                                              */
+/*******************************************************************/
+span {
+  position: relative;
+  display: inline-block;
+  animation: wave 5s infinite;
+  animation-delay: calc(.18s * var(--i));
 }
 @keyframes wave {
-    0%,40%,100%{
-        transform: translateY(0);
-    }
-    20%{
-        transform: translateY(-15px);
-    }
+  0%,40%,100%{
+      transform: translateY(0);
+  }
+  20%{
+      transform: translateY(-10px);
+  }
 }
-#name{
-    margin-top: -60px;
-    margin-left: 0px;
-    font-size: 55px;
-    letter-spacing: 2px;
+#wavy-heading {
+  font-size: 60px;
+  letter-spacing: 3px;
+  border-bottom: 3px solid #e7cc02;
+  text-shadow: 2px 2px whitesmoke;
 }
 
-.article{
-    border-top: #e7cd02 2px solid;
-    color: white;
-    background-color: #394043;
-    font-size: 2rem;
-    text-align: justify ;
-    margin: 0;
-    padding: 32px;
+.heading {
+  position: relative;
+  top: 25%;
+  left: 25%;
 }
-.heading{
-    margin: 0;
-    padding-top: 25px;
-    text-align: center;
+#page-title {
+  text-shadow: 2px 2px whitesmoke;
+    letter-spacing: 10px;
+    font-size: 80px;
+}
+#page-subtitle {
+  text-shadow: 2px 2px whitesmoke;
+    margin-top: -0.5%;
+    margin-left: 1%;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+/*******************************************************************/
+/*WINDY HEADING END                                                */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*ABOUT START                                                      */
+/*******************************************************************/
+.about{
+  font-size: 35px;
+  max-height: 400px;
+  max-width: 600px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 ul{
-    left: 50%;
-    list-style: none;
-    line-height: 2;
+  list-style-type: none;
 
 }
+/*******************************************************************/
+/*ABOUT END                                                        */
+/*******************************************************************/
 
-.werdegang{
-    background-color: #515a5f;
+
+
+/*******************************************************************/
+/*TIMELINE START                                                   */
+/*******************************************************************/
+.time{
+  font-size: 35px;
+  max-height: 775x;
+  max-width: 530px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+  /* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 10px auto;
+  margin-top: -8px;
+  margin-bottom: -15px;
+  padding: 10px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  padding-right: 20px;;
 }
 
-#windmill{
+/* Card container */
+.card {
+  position: relative;
+  width: 400px;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid #e7cc02;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #515a5f;
+  /*color: #7c868b;*/
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: #e7cc02;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  /*border: 3px solid #e7cc02;*/
+  border: 3px solid black;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+/*******************************************************************/
+/*TIMELINE END                                                     */
+/*******************************************************************/
+
+
+/*******************************************************************/
+/*ABTEILUNGEN START                                                */
+/*******************************************************************/
+.abteilungen{
+  font-size: 35px;
+  max-height: 600px;
+  max-width: 600px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+/*******************************************************************/
+/*ABTEILUNGEN END                                                  */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*PROJEKTE START                                                  */
+/*******************************************************************/
+.projekte{
+  font-size: 35px;
+  max-height: 800px;
+  max-width: 1000px;
+  min-width: 880px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+.btnTabs{
+  padding: 5px 15px 5px 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.btnTabs:hover{
+  background-color: #8c969b;
+  color: #fff;
+}
+/*******************************************************************/
+/*PROJEKTE END                                                     */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*KENNTNISSE START                                                 */
+/*******************************************************************/
+.grid img{
+  width: 200px;
+  height: 200px;
+}
+/*******************************************************************/
+/*KENNTNISSE END                                                   */
+/*******************************************************************/
+
+
+
+/*******************************************************************/
+/*ANIMATION START                                                  */
+/*******************************************************************/
+#windmill {
     position: absolute;
     animation: rotation 10s infinite linear; 
-    left: 0.6%;
+    left: 0.2%;
     top: 1%;
 }
-
 @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -96,16 +393,20 @@ ul{
     to {
       transform: rotate(359deg);
     }
-  }
+}
 
-  #kite{
-      top: 20px;
-      animation: tilt 2.5s infinite linear alternate;
-
-  }
-  @keyframes tilt {
+#kite {
+    position: absolute;
+    top: 45px;
+    left: 1215px;
+    animation: tilt 2.5s infinite linear alternate;
+}
+@keyframes tilt {
     to {
-      transform: rotate(-2deg);
+      transform: rotate(-4deg);
     }
-  }
+}
+/*******************************************************************/
+/*ANIMATION END                                                    */
+/*******************************************************************/
   

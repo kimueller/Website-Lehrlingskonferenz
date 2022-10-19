@@ -1,75 +1,180 @@
 <!doctype html>
 <html>
+
 <head>
     <title>Lehrlingskonferenz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <section class="images">
-        <img src="img/Sun.PNG" id="sun">
-        <img src="img/back.PNG" id="back">
-        <img src="img/Middle.png" id="middle">
-        <img src="img/Kite.png" id="kite">
-        <img src="img/Front .png" id="front">
-        <img src="img/windmilll.png" id="windmill">
-    </section>
-    <div class="title">
-        <h1 id="LK">
-            <span style="--i:1">L</span>
-            <span style="--i:2">E</span>
-            <span style="--i:3">H</span>
-            <span style="--i:4">R</span>
-            <span style="--i:5">L</span>
-            <span style="--i:6">I</span>
-            <span style="--i:7">N</span>
-            <span style="--i:8">G</span>
-            <span style="--i:9">S</span>
-            <span style="--i:10">K</span>
-            <span style="--i:11">O</span>
-            <span style="--i:12">N</span>
-            <span style="--i:13">F</span>
-            <span style="--i:14">E</span>
-            <span style="--i:15">R</span>
-            <span style="--i:16">E</span>
-            <span style="--i:17">N</span>
-            <span style="--i:18">Z</span>
-        </h1>
-        <h1 id="name">
-            <span style="--i:1">K</span>
-            <span style="--i:2">I</span>
-            <span style="--i:3">L</span>
-            <span style="--i:4">I</span>
-            <span style="--i:5">A</span>
-            <span style="--i:6">N</span>
-            <span style="--i:7"></span>
-            <span style="--i:7">M</span>
-            <span style="--i:8">Ü</span>
-            <span style="--i:9">L</span>
-            <span style="--i:10">L</span>
-            <span style="--i:11">E</span>
-            <span style="--i:12">R</span>
-        </h1>
-    </div>
-    <section class="about">
-        <div class="article">
-            <h1 class="heading">Steckbrief</h1>
 
-            <div class="content-text">
-                <ul>
-                    <li>- Applikationsentwickler - Coding&nbsp</li>
-                    <li>- 20 Jahre alt</li>
-                    <li>- Meiningen</li>
-                    <li>- Fußball</li>
-                </ul>
+<body>
+    <script src="script.js"></script>
+
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <section class="slide one">
+                <img id="kite" src="img/kitetest.png">
+                <img id="windmill" src="img/windmilll.png">
+                <div class="heading">
+                    <h1 id="page-title">
+                        <span style="--i:1">L</span>
+                        <span style="--i:2">E</span>
+                        <span style="--i:3">H</span>
+                        <span style="--i:4">R</span>
+                        <span style="--i:5">L</span>
+                        <span style="--i:6">I</span>
+                        <span style="--i:7">N</span>
+                        <span style="--i:8">G</span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">K</span>
+                        <span style="--i:11">O</span>
+                        <span style="--i:12">N</span>
+                        <span style="--i:13">F</span>
+                        <span style="--i:14">E</span>
+                        <span style="--i:15">R</span>
+                        <span style="--i:16">E</span>
+                        <span style="--i:17">N</span>
+                        <span style="--i:18">Z</span>
+                    </h1>
+                    <h1 id="page-subtitle">
+                        <span style="--i:1">K</span><span style="--i:2">I</span><span style="--i:3">L</span><span
+                            style="--i:4">I</span><span style="--i:5">A</span><span style="--i:6">N</span>
+                        <span style="--i:7"></span>
+                        <span style="--i:7">M</span><span style="--i:8">U</span><span style="--i:9">E</span><span
+                            style="--i:10">L</span><span style="--i:11">L</span><span style="--i:12">E</span><span
+                            style="--i:13">R</span>
+                    </h1>
+                </div>
+            </section>
+
+            <section class="slide two">
+                <div class="about" data-aos="slide-down">
+                    <h1 id="wavy-heading">
+                        <span style="--i:19">S</span><span style="--i:20">T</span><span style="--i:21">E</span><span
+                            style="--i:23">C</span><span style="--i:24">K</span><span style="--i:25">B</span><span
+                            style="--i:26">R</span><span style="--i:27">I</span><span style="--i:28">E</span><span
+                            style="--i:29">F</span>
+                    </h1>
+                    <div class="cards">
+                        <ul>
+                            <li>Applikationsentwickler - Coding</li>
+                            <li>20 Jahre</li>
+                            <li>Meiningen</li>
+                            <li>Fussball</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="time">
+                    <h1 id="wavy-heading">
+                        <span style="--i:30">W</span><span style="--i:31">E</span><span style="--i:32">R</span><span
+                            style="--i:33">D</span><span style="--i:34">E</span><span style="--i:35">G</span><span
+                            style="--i:36">A</span><span style="--i:37">N</span><span style="--i:38">G</span>
+                    </h1>
+                    <div class="timeline">
+                        <div class="outer">
+                            <div class="card">
+                                <div class="info">
+                                    <h3 class="title">2012 - 2016</h3>
+                                    <p>SMS Rankweil West</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="info">
+                                    <h3 class="title">2016 - Mai 2019</h3>
+                                    <p>HTL Dornbirn WI</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="info">
+                                    <h3 class="title">Mai 2019 - Sep 2019</h3>
+                                    <p>Produktionshelfer PCB</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="info">
+                                    <h3 class="title">Sep 2019 - Sep 2023</h3>
+                                    <p>Start Lehre</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide three">
+                <div class="abteilungen">
+                    <h1 id="wavy-heading">
+                        <span style="--i:39">A</span><span style="--i:40">B</span><span style="--i:41">T</span><span
+                            style="--i:43">E</span><span style="--i:44">I</span><span style="--i:45">L</span><span
+                            style="--i:46">U</span><span style="--i:47">N</span><span style="--i:48">G</span><span
+                            style="--i:49">E</span><span style="--i:50">N</span>
+                    </h1>
+                    <div class="cards">
+                        <canvas id="chart" width="400" height="400"></canvas>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                        <script src="chart.js"></script>
+                    </div>
+                </div>
+
+                <div class="projekte">
+                    <h1 id="wavy-heading">
+                        <span style="--i:51">P</span><span style="--i:52">R</span><span style="--i:53">O</span><span
+                            style="--i:54">J</span><span style="--i:55">E</span><span style="--i:56">K</span><span
+                            style="--i:57">T</span><span style="--i:58">E</span>
+                    </h1>
+                    <div class="cards">
+                        <div class="tabs">
+                            <button class="btnTabs" onclick="openProject('Klesenza')">Klesenza</button>
+                            <button class="btnTabs" onclick="openProject('Bachmix')">Bachmix</button>
+                            <button class="btnTabs" onclick="openProject('Spielebibliothek')">Spielebibliothek</button>
+                        </div>
+                        <div class="projekt" id="Klesenza">
+                            <h3>Klesenza</h3>
+                            <ul>
+                                <li>State-Machine</li>
+                                <li>Düsenregler</li>
+                                <li>Turbinenregler</li>
+                                <li>Alarm</li>
+                            </ul>
+                        </div>
+                        <div class="projekt" id="Bachmix"  style="display: none;">
+                            <h2>Bachmix</h2>
+                            <img src="img/bachmix.jpg" width="400px">
+                        </div>
+                        <div class="projekt" id="Spielebibliothek" style="display: none;">
+                            <h3>Spielebibliothek</h3>
+                            <img src="img/higherlower1.png" width="800px">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide four">
+                <div class="kenntnisse">
+                    <h1 id="wavy-heading">
+                        <span style="--i:59">K</span><span style="--i:60">E</span><span style="--i:61">N</span><span
+                            style="--i:62">N</span><span style="--i:63">T</span><span style="--i:64">N</span><span
+                            style="--i:65">I</span><span style="--i:66">S</span><span style="--i:67">S</span><span style="--i:68">E</span>
+                    </h1>
+                    <div class="cards">
+                        <div class="grid">
+                            <img src="img/c.png">
+                            <img src="img/csharp.png">
+                            <img src="img/sql.png">
+                            <img src="img/html.png">
+                            <img src="img/css.png">
+                            <img src="img/javascript.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        </div>
-    </section>
-    <section class="werdegang">
-        <img src="img/frontending.png">
-    </section>
+    </div>
 </body>
+
 </html>
