@@ -13,8 +13,8 @@ body {
   background-color: #4498bc;
   background-image: url("img/Wind.png");
   background-repeat: repeat-x;
+  background-size: cover;
   animation: animate 15s linear infinite;
-
 }
 @keyframes animate {
 0% { background-position: 0 0; }
@@ -37,7 +37,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -69,7 +69,6 @@ body {
 .one {
   background-image: url("img/all\ -\ Kopie.png");
   background-repeat: no-repeat;
-
 }
 
 .two {
@@ -94,6 +93,19 @@ body {
 .four {
   background-image: url("img/zweite.png");
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.five{
+  background-image: url("img/all\ -\ Kopie.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; 
 }
 /*******************************************************************/
 /*BACKGROUND END                                                   */
@@ -366,9 +378,33 @@ ul{
 /*******************************************************************/
 /*KENNTNISSE START                                                 */
 /*******************************************************************/
+.kenntnisse{
+  font-size: 35px;
+  max-height: 800px;
+  max-width: 1200px;
+  min-width: 880px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
 .grid img{
   width: 200px;
   height: 200px;
+}
+
+.zukunft{
+  font-size: 35px;
+  max-height: 600px;
+  max-width: 600px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 /*******************************************************************/
 /*KENNTNISSE END                                                   */
@@ -380,6 +416,7 @@ ul{
 /*ANIMATION START                                                  */
 /*******************************************************************/
 #windmill {
+    object-fit: fill;
     position: absolute;
     animation: rotation 10s infinite linear; 
     left: 0.2%;
@@ -408,4 +445,3 @@ ul{
 /*******************************************************************/
 /*ANIMATION END                                                    */
 /*******************************************************************/
-  

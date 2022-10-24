@@ -1,29 +1,22 @@
 var chartObject = document.getElementById('chart');
 
 var chart = new Chart(chartObject, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
-        labels: [ "Schule", "TR-COM", "A-POO-AT", "TF-TE", "IS", "AU-SE", ],
+        labels: ["TF-TE", "IS", "A-POO-AT","Schule", "AU-SE", "TR-COM"],
         datasets: [{
             backgroundColor: [
                 "#e60049", "#0bb4ff", "#50e991", "#e6d800", "#9b19f5", "#ffa300"
             ],
-            color: ["#fff"],
-            data: [10, 0, 12, 4, 7, 17]
+            data: [4, 7, 12,40, 16+17+12,42+26+27]
         }]
     },
     options: {
-        plugins: {
-            legend: {
-                labels: {
-                    font: {
-                        size: 80
-                    }
-                }
-            }
-        },
         legend: {
             display: false
+        },
+        labels: {
+            fontColor: '#e60049'
         }
     }
 });
