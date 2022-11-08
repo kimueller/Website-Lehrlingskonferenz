@@ -15,8 +15,19 @@ var chart = new Chart(chartObject, {
         legend: {
             display: false
         },
-        labels: {
-            fontColor: '#e60049'
+        scales: {
+            xAxes: [{
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 15
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 15,
+                }
+            }]
         }
     }
 });

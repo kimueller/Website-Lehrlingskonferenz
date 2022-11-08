@@ -6,14 +6,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Staatliches', cursive;
-  background-size: cover;
 }
 
 body {
   background-color: #4498bc;
-  background-image: url("img/Wind.png");
+  background-image: url("img/animations/wind.png");
   background-repeat: repeat-x;
-  background-size: cover;
   animation: animate 15s linear infinite;
 }
 @keyframes animate {
@@ -67,23 +65,21 @@ body {
 /*BACKGROUND START                                                 */
 /*******************************************************************/
 .one {
-  background-image: url("img/all\ -\ Kopie.png");
-  background-repeat: no-repeat;
+  background-image: url("img/bg/background.png");
+  background-repeat:no-repeat;
 }
 
 .two {
-  background-image: url("img/zweite.png");
-  background-repeat: no-repeat;
+  background-image: url("img/bg/slide-duo.png");
+  background-repeat:no-repeat;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .three {
-  background-image: url("img/all\ -\ Kopie.png");
-  background-repeat: no-repeat;
+  background-image: url("img/bg/slide-mountains.png");
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -91,14 +87,22 @@ body {
 }
 
 .four {
-  background-image: url("img/zweite.png");
-  background-repeat: no-repeat;
+  background-image: url("img/bg/slide-bridge.png");
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
+.five {
+  background-image: url("img/bg/background.png");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*
 .five{
   background-image: url("img/all\ -\ Kopie.png");
   background-repeat: no-repeat;
@@ -106,7 +110,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around; 
-}
+}*/
 /*******************************************************************/
 /*BACKGROUND END                                                   */
 /*******************************************************************/
@@ -131,28 +135,28 @@ span {
   }
 }
 #wavy-heading {
-  font-size: 60px;
+  font-size: 4vw;
   letter-spacing: 3px;
   border-bottom: 3px solid #e7cc02;
-  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 0.2vw 0.1vw whitesmoke;
 }
 
 .heading {
-  position: relative;
-  top: 25%;
-  left: 25%;
+  position: absolute;
+  top: 30vh;
+  left: 50vh;
 }
 #page-title {
-  text-shadow: 2px 2px whitesmoke;
-    letter-spacing: 10px;
-    font-size: 80px;
+  text-shadow: 0.2vw 0.1vw whitesmoke;
+    letter-spacing: 0.6vw;
+    font-size: 4.5vw;
 }
 #page-subtitle {
-  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 0.2vw 0.1vw whitesmoke;
     margin-top: -0.5%;
     margin-left: 1%;
-    font-size: 60px;
-    letter-spacing: 3px;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
 }
 /*******************************************************************/
 /*WINDY HEADING END                                                */
@@ -164,9 +168,10 @@ span {
 /*ABOUT START                                                      */
 /*******************************************************************/
 .about{
-  font-size: 35px;
-  max-height: 400px;
-  max-width: 600px;
+  font-size: 2.1vw;
+  max-height: 25vw;
+  /*max-height: 400px;*/
+  max-width: 35vw;
   padding: 5px;
   background-color: #7c868b;
   border-radius: 32px;
@@ -188,9 +193,9 @@ ul{
 /*TIMELINE START                                                   */
 /*******************************************************************/
 .time{
-  font-size: 35px;
-  max-height: 775x;
-  max-width: 530px;
+  font-size: 2.1vw;
+  max-height: 55vw;
+  max-width: 35vw;
   padding: 5px;
   background-color: #7c868b;
   border-radius: 32px;
@@ -327,9 +332,9 @@ ul{
 /*ABTEILUNGEN START                                                */
 /*******************************************************************/
 .abteilungen{
-  font-size: 35px;
-  max-height: 600px;
-  max-width: 600px;
+  font-size: 2.1vw;
+  max-height: 80vw;
+  max-width: 80vw;
   padding: 5px;
   background-color: #7c868b;
   border-radius: 32px;
@@ -347,10 +352,10 @@ ul{
 /*PROJEKTE START                                                  */
 /*******************************************************************/
 .projekte{
-  font-size: 35px;
-  max-height: 800px;
-  max-width: 1000px;
-  min-width: 880px;
+  font-size: 2.1vw;
+  max-height: 80vw;
+  max-width: 80vw;
+  min-width: 30vw;
   padding: 5px;
   background-color: #7c868b;
   border-radius: 32px;
@@ -379,7 +384,6 @@ ul{
 /*KENNTNISSE START                                                 */
 /*******************************************************************/
 .kenntnisse{
-  font-size: 35px;
   max-height: 800px;
   max-width: 1200px;
   min-width: 880px;
@@ -396,7 +400,19 @@ ul{
 }
 
 .zukunft{
-  font-size: 35px;
+  font-size: 2.1vw;
+  max-height: 600px;
+  max-width: 600px;
+  padding: 5px;
+  background-color: #7c868b;
+  border-radius: 32px;
+  border: 5px solid #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.fragen{
+  font-size: 2.1vw;
   max-height: 600px;
   max-width: 600px;
   padding: 5px;
@@ -416,11 +432,11 @@ ul{
 /*ANIMATION START                                                  */
 /*******************************************************************/
 #windmill {
-    object-fit: fill;
     position: absolute;
     animation: rotation 10s infinite linear; 
-    left: 0.2%;
-    top: 1%;
+    left: 0.5vw;
+    top: -1.1vw;
+    
 }
 @keyframes rotation {
     from {
@@ -433,8 +449,10 @@ ul{
 
 #kite {
     position: absolute;
-    top: 45px;
-    left: 1215px;
+    left: 17.8%;
+    top: -1%;
+    
+
     animation: tilt 2.5s infinite linear alternate;
 }
 @keyframes tilt {
@@ -442,6 +460,86 @@ ul{
       transform: rotate(-4deg);
     }
 }
+
+.bird{
+  height: 90px;
+  width: 90px;
+  animation: fly 5s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  display: none;
+
+}
+@keyframes fly {
+  to {
+		transform: translate(350px, -350px);
+  }
+}
+
+#bird1{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  height: 70px;
+  width: 90px;
+}
+#bird2{
+  position: absolute;
+  top: 9%;
+  left: 37%;
+}
+#bird3{
+  position: absolute;
+  top: 7%;
+  left: 34%;
+}
 /*******************************************************************/
 /*ANIMATION END                                                    */
 /*******************************************************************/
+
+
+@media screen and (min-width:1400px) and (max-width:1700px) {
+  /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+  .slide {
+    width: 1900px;
+    height: 100vh;
+  }
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 9500px;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+
+
+  #wavy-heading {
+    font-size: 5vw;
+  }
+  
+  .heading {
+    left: 40vh;
+  }
+  #page-title {
+      font-size: 5.15vw;
+  }
+  #page-subtitle {
+      font-size: 4.4vw;
+  }
+  #windmill {
+    top: -1.6vw;
+  }
+  #kite{
+    left: 17.98%;
+  }
+  }

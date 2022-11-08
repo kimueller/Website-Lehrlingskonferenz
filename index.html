@@ -8,16 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
 
 <body>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 
     <div class="outer-wrapper">
         <div class="wrapper">
             <section class="slide one">
-                <img id="kite" src="img/kitetest.png">
-                <img id="windmill" src="img/windmilll.png">
+                <img id="windmill" src="img/animations/windmill.png">
+                <img id="kite" src="img/animations/kitetest.png">
                 <div class="heading">
                     <h1 id="page-title">
                         <span style="--i:1">L</span>
@@ -51,7 +57,10 @@
             </section>
 
             <section class="slide two">
-                <div class="about" data-aos="slide-down">
+                <img class="bird" id="bird1" src="img/bird1.gif" >
+                <img class="bird" id="bird2" src="img/bird1.gif" >
+                <img class="bird" id="bird3" src="img/bird1.gif" >
+                <div class="about">
                     <h1 id="wavy-heading">
                         <span style="--i:19">S</span><span style="--i:20">T</span><span style="--i:21">E</span><span
                             style="--i:23">C</span><span style="--i:24">K</span><span style="--i:25">B</span><span
@@ -158,15 +167,16 @@
                     </h1>
                     <div class="cards">
                         <div class="grid">
-                            <img src="img/c.png">
-                            <img src="img/csharp.png">
-                            <img src="img/html.png">
-                            <img src="img/css.png">
-                            <img src="img/javascript.png">
+                            <img src="img/kl/c.png">
+                            <img src="img/kl/csharp.png">
+                            <img src="img/kl/html.png">
+                            <img src="img/kl/css.png">
+                            <img src="img/kl/javascript.png">
                         </div>
                     </div>
                 </div>
-
+            </section>
+            <section class="slide five">          
                 <div class="zukunft">
                     <h1 id="wavy-heading">
                         <span style="--i:69">Z</span><span style="--i:70">U</span><span style="--i:71">K</span><span
@@ -180,22 +190,15 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-            <!--
-            <section class="slide five">
 
-
-                <div class="zukunft">
+                <div class="fragen">
+             
                     <h1 id="wavy-heading">
-                        <span style="--i:69">Z</span><span style="--i:70">U</span><span style="--i:71">K</span><span
-                            style="--i:72">U</span><span style="--i:73">N</span><span style="--i:74">F</span><span style="--i:75">T</span>
-                    </h1>   
-                    <div class="cards">
-                        <h2>Fragen?</h2>
-                    </div>
+                        <span style="--i:73">F</span><span style="--i:74">R</span><span style="--i:75">A</span><span
+                            style="--i:76">G</span><span style="--i:77">E</span><span style="--i:78">N</span><span style="--i:79">?</span>                        
+                    </h1>
                 </div>
             </section>
-            -->
 
         </div>
     </div>
