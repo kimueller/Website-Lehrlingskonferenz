@@ -193,7 +193,7 @@ ul{
 /*TIMELINE START                                                   */
 /*******************************************************************/
 .time{
-  font-size: 2.1vw;
+  font-size: 1.9vw;
   max-height: 55vw;
   max-width: 35vw;
   padding: 5px;
@@ -218,7 +218,7 @@ ul{
 /* Card container */
 .card {
   position: relative;
-  width: 400px;
+  width: 450px;
 }
 
 /* setting padding based on even or odd */
@@ -516,7 +516,7 @@ ul{
   .wrapper {
     display: flex;
     flex-direction: row;
-    width: 9500px;
+    width: 9600px;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   }
@@ -542,4 +542,7 @@ ul{
   #kite{
     left: 17.98%;
   }
+  }
+  @media screen and (max-width: 1399px) {
+
   }
