@@ -19,7 +19,7 @@ var chart = new Chart(chartObject, {
             xAxes: [{
                 ticks: {
                     fontColor: "white",
-                    fontSize: 15
+                    fontSize: 16
                 }
             }],
             yAxes: [{

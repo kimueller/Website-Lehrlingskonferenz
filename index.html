@@ -24,7 +24,7 @@
         <div class="wrapper">
             <section class="slide one">
                 <img id="windmill" src="img/animations/windmill.png">
-                <img id="kite" src="img/animations/kitetest.png">
+                <img id="kite" src="img/animations/kite.png">
                 <div class="heading">
                     <h1 id="page-title">
                         <span style="--i:1">L</span>
@@ -124,42 +124,27 @@
                             style="--i:49">E</span><span style="--i:50">N</span>
                     </h1>
                     <div class="cards">
-                        <canvas id="chart" width="400" height="400"></canvas>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-                        <script src="chart.js"></script>
-                    </div>
-                </div>
-
-                <div class="projekte">
-                    <h1 id="wavy-heading">
-                        <span style="--i:51">P</span><span style="--i:52">R</span><span style="--i:53">O</span><span
-                            style="--i:54">J</span><span style="--i:55">E</span><span style="--i:56">K</span><span
-                            style="--i:57">T</span><span style="--i:58">E</span>
-                    </h1>
-                    <div class="cards">
                         <div class="tabs">
-                            <button class="btnTabs" onclick="openProject('Klesenza')">Klesenza</button>
-                            <button class="btnTabs" onclick="openProject('Bachmix')">Bachmix</button>
+                            <button class="btnTabs" onclick="openTab('first')">1. LJ</button>
+                            <button class="btnTabs" onclick="openTab('second')">2. LJ</button>
+                            <button class="btnTabs" onclick="openTab('third')">3. LJ</button>
+                            <button class="btnTabs" onclick="openTab('fourth')">4. LJ</button>
                         </div>
-                        <div class="projekt" id="Klesenza">
-                            <h3>Klesenza</h3>
-                            <ul>
-                                <li>State-Machine</li>
-                                <li>Düsenregler</li>
-                                <li>Turbinenregler</li>
-                                <li>Alarm</li>
-                            </ul>
+                        <div class="abteil" id="first">
+                            <img src="img/kl/first.png">
                         </div>
-                        <div class="projekt" id="Bachmix"  style="display: none;">
-                            <h2>Bachmix</h2>
-                            <img src="img/bachmix.jpg" width="400px">
+                        <div class="abteil" id="second" style="display: none;">
+                            <img src="img/kl/second.png">
                         </div>
-                        
+                        <div class="abteil" id="third" style="display: none;">
+                            <img src="img/kl/third.png">
+                        </div>
+                        <div class="abteil" id="fourth" style="display: none;">
+                            <img src="img/kl/fourth.png">
+
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="slide four">
                 <div class="kenntnisse">
                     <h1 id="wavy-heading">
                         <span style="--i:59">K</span><span style="--i:60">E</span><span style="--i:61">N</span><span
@@ -176,6 +161,60 @@
                         </div>
                     </div>
                 </div>
+               
+            </section>
+
+            <section class="slide four">
+                <div class="projekte">
+                    <h1 id="wavy-heading">
+                        <span style="--i:51">P</span><span style="--i:52">R</span><span style="--i:53">O</span><span
+                            style="--i:54">J</span><span style="--i:55">E</span><span style="--i:56">K</span><span
+                            style="--i:57">T</span><span style="--i:58">E</span>
+                    </h1>
+                    <div class="cards">
+                        <div class="tabs">
+                            <button class="btnTabs" onclick="openProject('Klesenza')">Klesenza</button>
+                            <button class="btnTabs" onclick="openProject('Bachmix')">Bachmix</button>
+                        </div>
+                        <div class="projekt" id="Klesenza">
+                            <h3>Klesenza</h3>
+                            <div class="slideshow-container">
+
+                                <div class="start mySlides fade">
+                                  <img class="klesenza" src="img/klesenza/klesenza.jpg">
+                                </div>
+                                <div class="mySlides fade">
+                                    <ul>
+                                        <li>State-Machine</li>
+                                        <li>Düsenregler</li>
+                                        <li>Turbinenregler</li>
+                                        <li>Alarm</li>
+                                    </ul>                                  
+                                </div>
+                                <div class="mySlides fade">
+                                  <img class="klesenza" src="img/klesenza/klesenza-innen.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img class="klesenza" src="img/klesenza/pelton.jpg">
+                                  </div>
+
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                                
+                                </div>
+                                <br>
+                            
+                        </div>
+                        <div class="projekt" id="Bachmix"  style="display: none;">
+                            <h2>Bachmix</h2>
+                            <img class="bachmix" src="img/bachmix.jpg">
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </section>
             <section class="slide five">   
                 <div class="leistungen">
