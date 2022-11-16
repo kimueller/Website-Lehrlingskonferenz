@@ -69,6 +69,7 @@ body {
 .one {
   background-image: url("img/bg/slide-1.png");
   background-repeat:no-repeat;
+  
 }
 
 .two {
@@ -364,7 +365,7 @@ ul{
   height: 31vw;
   border-radius: 16px;
 }
-.video{
+#video{
   height: 28vw;
   border-radius: 16px;
 
@@ -493,6 +494,41 @@ ul{
 /*ANIMATION END                                                    */
 /*******************************************************************/
 
+@media screen and (height:1080px) {
+  .one{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .two{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .three{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .four{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .five{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #kite{
+    top: 5%;
+    left: 18.75%;
+  }
+  #windmill{
+    left: -0.8%;
+    top: 0.05%;
+  }
+}
 
 @media screen and (min-width:1400px) and (max-width:1700px) {
   /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
